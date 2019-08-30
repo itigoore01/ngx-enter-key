@@ -5,6 +5,8 @@
 
 # ngx-enter-key
 
+Does not trigger enter key pressed during composing input.
+
 ## Installation
 
 ```bash
