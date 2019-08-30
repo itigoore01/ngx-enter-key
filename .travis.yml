@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+script:
+  - sh scripts/travis-ci-build.sh
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
