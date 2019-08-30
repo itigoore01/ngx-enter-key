@@ -9,7 +9,6 @@ import { By } from '@angular/platform-browser';
 class TestComponent {
 
   onEnterKey(event: KeyboardEvent) {
-    console.log(event);
   }
 
 }
