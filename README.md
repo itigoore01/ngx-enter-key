@@ -16,6 +16,24 @@ npm install --save ngx-enter-key
 ## Usage
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxEnterKeyModule } from 'ngx-enter-key';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+    imports: [
+        BrowserModule,
+        NgxEnterKeyModule
+    ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+```typescript
 @Component({
   selector: 'app-form',
   template: `
