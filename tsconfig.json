@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "strict": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -17,7 +18,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-enter-key": [
+        "dist/ngx-enter-key"
+      ],
+      "ngx-enter-key/*": [
+        "dist/ngx-enter-key/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
