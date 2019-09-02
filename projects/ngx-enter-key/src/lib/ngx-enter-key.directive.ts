@@ -19,7 +19,9 @@ export class NgxEnterKeyDirective {
 
   @HostListener('keydown.enter', ['$event'])
   _onKeydownEnter(event: KeyboardEvent) {
+    // サポートされていないブラウザではイベントをそのまま通す
     if (!this.support) {
+      this.enterKey.emit(event);
       return;
     }
 
